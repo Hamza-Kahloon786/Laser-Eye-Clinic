@@ -1,8 +1,10 @@
 const mongoose  = require('mongoose');
 const dotenv    = require('dotenv');
 const path      = require('path');
+const dns       = require('dns');
 
 dotenv.config({ path: path.join(__dirname, '../.env') });
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 
 const User        = require('../models/User');
 const Appointment = require('../models/Appointment');
