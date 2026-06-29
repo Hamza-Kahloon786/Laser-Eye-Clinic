@@ -180,6 +180,7 @@ Frontend runs on **http://localhost:5173**
 
 ## Environment Variables
 
+**Backend** (`backend/.env`):
 ```env
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/usman_laser_eye_clinic
@@ -187,3 +188,16 @@ JWT_SECRET=change_this_to_a_long_random_string
 FRONTEND_URL=http://localhost:5173
 NODE_ENV=development
 ```
+
+**Frontend** (`frontend/.env` — optional, see `.env.example`):
+```env
+# Only needed when frontend and backend are deployed on separate domains.
+# Leave unset locally — Vite's dev proxy handles /api automatically.
+VITE_API_URL=https://api.yourclinic.com/api
+```
+
+> ⚠️ **Deployment note:** `api.js` calls `/api` by default, which only resolves correctly
+> in local dev (via the Vite proxy in `vite.config.js`) or when frontend + backend share
+> a domain behind a reverse proxy. If you deploy them on separate hosts (e.g. frontend on
+> Vercel, backend on Render), set `VITE_API_URL` at build time, and add the frontend's
+> deployed URL to the backend's `FRONTEND_URL` for CORS.
