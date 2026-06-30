@@ -2,8 +2,6 @@
 node_modules/
 
 # Environment variables
-.env
-.env.local
 .env.*.local
 
 # Build output
@@ -16,10 +14,13 @@ logs/
 npm-debug.log*
 
 # Editor / OS
-.vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
 # Vite
 .vite/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
