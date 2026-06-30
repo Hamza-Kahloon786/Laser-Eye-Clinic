@@ -15,8 +15,8 @@ const SERVICES = [
 const WHY = [
   { icon:<Award size={20}/>,  title:'Award-Winning Clinic',   desc:'Recipient of the Pakistan Healthcare Excellence Award 3 years running.' },
   { icon:<Zap size={20}/>,    title:'Latest Technology',      desc:'FDA-approved WaveLight EX500 excimer laser — the gold standard in refractive surgery.' },
-  { icon:<Shield size={20}/>, title:'99% Success Rate',        desc:'Over 10,000 successful procedures with an industry-leading satisfaction score.' },
-  { icon:<Clock size={20}/>,  title:'15+ Years Experience',   desc:'Our senior surgeons have combined experience of over four decades in ophthalmology.' },
+  { icon:<Shield size={20}/>, title:'High Success Rate',       desc:'Hundreds of successful procedures performed with exceptional patient satisfaction scores.' },
+  { icon:<Clock size={20}/>,  title:'5+ Years Experience',    desc:'Dr. Usman Bhatti brings 5 years of dedicated specialist experience in laser eye correction.' },
   { icon:<Users size={20}/>,  title:'Patient-First Care',     desc:'Personalised consultation, transparent pricing and lifetime aftercare guarantee.' },
   { icon:<HeartPulse size={20}/>,title:'Pain-Free Procedures', desc:'Most patients experience zero discomfort and return to normal activity the next day.' },
 ];
@@ -95,7 +95,7 @@ export default function Landing() {
             borderRadius:100,padding:'6px 18px',marginBottom:28,
           }}>
             <Award size={13} color="#93c5fd"/>
-            <span style={{color:'#93c5fd',fontSize:12,fontWeight:500}}>Trusted by 10,000+ patients across Pakistan</span>
+            <span style={{color:'#93c5fd',fontSize:12,fontWeight:500}}>Trusted by patients across Punjab, Pakistan</span>
           </div>
 
           <h1 style={{
@@ -110,7 +110,7 @@ export default function Landing() {
 
           <p style={{color:'#94a3b8',fontSize:17,lineHeight:1.75,maxWidth:560,margin:'0 auto 36px'}}>
             Advanced laser eye correction with Pakistan's most experienced ophthalmologists.
-            LASIK, SMILE &amp; PRK procedures with a <strong style={{color:'#e2e8f0'}}>99% success rate</strong>.
+            LASIK, SMILE &amp; PRK procedures led by <strong style={{color:'#e2e8f0'}}>Dr. Usman Bhatti</strong> with 5 years of specialist experience.
           </p>
 
           <div style={{display:'flex',gap:14,justifyContent:'center',flexWrap:'wrap',marginBottom:64}}>
@@ -145,7 +145,7 @@ export default function Landing() {
             borderRadius:16,overflow:'hidden',
             background:'rgba(255,255,255,0.03)',backdropFilter:'blur(8px)',
           }}>
-            {[['10K+','Procedures Done'],['99%','Success Rate'],['15+','Years Experience'],['50+','Specialists']].map(([n,l],i)=>(
+            {[['1000+','Procedures Done'],['5+','Years Experience'],['100%','Patient Focus'],['1','Specialist Doctor']].map(([n,l],i)=>(
               <div key={n} style={{
                 padding:'22px 0',textAlign:'center',
                 borderRight: i<3 ? '1px solid rgba(255,255,255,0.07)' : 'none',
@@ -319,10 +319,10 @@ export default function Landing() {
 
           <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:20}}>
             {[
-              { icon:<MapPin size={22}/>,  color:'#3b82f6', bg:'#eff6ff', title:'Our Location',  lines:['123 Vision Street','Gulberg III, Lahore','Punjab, Pakistan'] },
-              { icon:<Phone size={22}/>,   color:'#10b981', bg:'#ecfdf5', title:'Call Us',        lines:['+92 300 123 4567','+92 42 345 6789','Mon – Sat, 4 PM – 11 PM'] },
-              { icon:<Mail size={22}/>,    color:'#8b5cf6', bg:'#f5f3ff', title:'Email Us',       lines:['info@usmanlaser.pk','appointments@usmanlaser.pk','Reply within 24 hrs'] },
-              { icon:<Clock size={22}/>,   color:'#f59e0b', bg:'#fffbeb', title:'Working Hours',  lines:['Monday – Saturday','4:00 PM – 11:00 PM','Sunday: Closed'] },
+              { icon:<MapPin size={22}/>,  color:'#3b82f6', bg:'#eff6ff', title:'Our Location',  lines:['Zafar Plaza','Muridke, Punjab','Pakistan'] },
+              { icon:<Phone size={22}/>,   color:'#10b981', bg:'#ecfdf5', title:'Call Us',        lines:['0328-4243363','Mon – Fri, 3 PM – 8 PM','Sat & Sun: Closed'] },
+              { icon:<Mail size={22}/>,    color:'#8b5cf6', bg:'#f5f3ff', title:'Email Us',       lines:['usmanlasereyeclinic563@gmail.com','Reply within 24 hrs'] },
+              { icon:<Clock size={22}/>,   color:'#f59e0b', bg:'#fffbeb', title:'Working Hours',  lines:['Monday – Friday','3:00 PM – 8:00 PM','Saturday & Sunday: Closed'] },
             ].map(c=>(
               <div key={c.title} style={{background:'#fff',border:'1px solid #e2e8f0',borderRadius:16,padding:'28px 24px',textAlign:'center'}}>
                 <div style={{width:52,height:52,borderRadius:14,background:c.bg,display:'flex',alignItems:'center',justifyContent:'center',color:c.color,margin:'0 auto 16px'}}>
@@ -382,10 +382,10 @@ export default function Landing() {
             <div>
               <div style={{color:'#94a3b8',fontSize:11,fontWeight:700,letterSpacing:'0.8px',textTransform:'uppercase',marginBottom:14}}>Contact</div>
               {[
-                [<Phone size={12}/>,'+92 300 123 4567'],
-                [<Mail size={12}/>,'info@usmanlaser.pk'],
-                [<MapPin size={12}/>,'Gulberg III, Lahore'],
-                [<Clock size={12}/>,'4 PM – 11 PM (Mon–Sat)'],
+                [<Phone size={12}/>,'0328-4243363'],
+                [<Mail size={12}/>,'usmanlasereyeclinic563@gmail.com'],
+                [<MapPin size={12}/>,'Zafar Plaza, Muridke'],
+                [<Clock size={12}/>,'3 PM – 8 PM (Mon–Fri)'],
               ].map(([icon,text],i)=>(
                 <div key={i} style={{display:'flex',alignItems:'center',gap:8,color:'#475569',fontSize:13,marginBottom:8}}>
                   <span style={{color:'#334155'}}>{icon}</span>{text}

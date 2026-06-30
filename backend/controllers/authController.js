@@ -56,7 +56,7 @@ exports.seedUsers = async (req, res) => {
     const count = await User.countDocuments();
     if (count > 0) return res.json({ message: 'Users already seeded', count });
     await User.insertMany([
-      { username: 'admin', password: 'admin123', name: 'Dr. Usman Ahmed', role: 'Doctor' },
+      { username: 'admin', password: 'admin123', name: 'Dr. Usman Bhatti', role: 'Doctor' },
       { username: 'staff', password: 'staff123', name: 'Ayesha Khan',    role: 'Receptionist' },
     ]);
     res.json({ success: true, message: 'Default users created (admin/admin123 and staff/staff123)' });
