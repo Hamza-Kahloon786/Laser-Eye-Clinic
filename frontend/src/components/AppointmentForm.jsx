@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { X, Calendar, Pencil, AlertCircle } from 'lucide-react';
 
 const SERVICES = ['LASIK Surgery','SMILE Procedure','PRK Treatment','Eye Consultation','Cataract Assessment','Post-Op Follow-up','Glaucoma Check','Retina Screening'];
-const DOCTORS  = ['Dr. Usman Ahmed','Dr. Sara Malik','Dr. Bilal Khan','Dr. Fatima Rizvi'];
-const TIMES    = ['04:00 PM','04:30 PM','05:00 PM','05:30 PM','06:00 PM','06:30 PM','07:00 PM','07:30 PM','08:00 PM','08:30 PM','09:00 PM','09:30 PM','10:00 PM','10:30 PM','11:00 PM'];
+const DOCTORS  = ['Dr. Usman Bhatti'];
+const TIMES    = ['03:00 PM','03:30 PM','04:00 PM','04:30 PM','05:00 PM','05:30 PM','06:00 PM','06:30 PM','07:00 PM','07:30 PM','08:00 PM'];
 
 const EMPTY = { patientName:'',phone:'',email:'',age:'',service:SERVICES[0],doctor:DOCTORS[0],date:'',time:TIMES[0],notes:'' };
 
